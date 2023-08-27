@@ -15,9 +15,11 @@
 			"16": "images/icon-16.png",
 			"24": "images/icon-24.png",
 			"32": "images/icon-32.png"
-		},
-		"default_popup": "popup.html"
+		}
 	},
 
-	"permissions": ["activeTab", "tabs"]
+	"permissions": ["storage", "tabs", "activeTab", "scripting"],
+	"background": {
+		"service_worker": "background.js"
+	}
 }
